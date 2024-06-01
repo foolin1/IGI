@@ -1,0 +1,15 @@
+Hello! How are you doing today? I hope everything is fine. This text is for testing purposes. Here is a smiley: :). And another one: ;---). This is a narrative sentence. This is another one! Is this a question? Yes, it is.
+
+Car number: 1234 AB-5. Another car number: 5678 CT-3.
+
+This text includes various types of words and sentences. Some words start with lowercase consonants: ball, cat, dog, fish. This is to test them.
+
+Valid MAC address: aE:dC:cA:56:76:54. Invalid MAC address: 01:23:45:67:89:Az.
+
+We are also testing other features like finding the longest word in the text and identifying odd words. For example, the longest word here might be "identifying".
+
+Words followed by a comma, such as: example, test, are included. Let's find them. 
+
+What about words ending with 'y'? Let's check for them: happy, funny, story.
+
+Finally, we include some random text to make sure everything works as expected.

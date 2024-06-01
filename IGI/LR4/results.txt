@@ -1,0 +1,41 @@
+Count sentences in text: 20
+Count sentences in text of each type: 
+narrative: 16
+question: 2
+exclamation: 2
+Average sentence length in characters: 
+Hello: 5.0
+How are you doing today: 3.8
+I hope everything is fine: 4.2
+This text is for testing purposes: 4.666666666666667
+Here is a smiley: :): 3.25
+And another one: ;---): 4.333333333333333
+This is a narrative sentence: 4.8
+This is another one: 4.0
+Is this a question: 3.75
+Yes, it is: 2.3333333333333335
+Car number: 1234 AB-5: 3.6666666666666665
+Another car number: 5678 CT-3: 4.5
+This text includes various types of words and sentences: 5.222222222222222
+Some words start with lowercase consonants: ball, cat, dog, fish: 5.1
+This is to test them: 3.2
+Valid MAC address: aE:dC:cA:56:76:54: 3.5
+Invalid MAC address: 01:23:45:67:89:Az: 4.75
+We are also testing other features like finding the longest word in the text and identifying odd words: 4.722222222222222
+For example, the longest word here might be "identifying": 5.111111111111111
+Words followed by a comma, such as: example, test, are included: 4.454545454545454
+Let's find them: 3.0
+What about words ending with 'y': 4.166666666666667
+Let's check for them: happy, funny, story: 3.875
+Finally, we include some random text to make sure everything works as expected: 5.0
+Average word length in text in characters: 4.216049382716049
+Count of emoticons in a text: 2
+All words starting with a lowercase consonant: ['you', 'doing', 'today', 'hope', 'fine', 'text', 'for', 'testing', 'purposes', 'smiley', 'narrative', 'sentence', 'this', 'question', 'number', 'car', 'number', 'text', 'various', 'types', 'words', 'sentences', 'words', 'start', 'with', 'lowercase', 'consonants', 'ball', 'cat', 'dog', 'fish', 'to', 'test', 'them', 'dC', 'cA', 'testing', 'features', 'like', 'finding', 'the', 'longest', 'word', 'the', 'text', 'words', 'the', 'longest', 'word', 'here', 'might', 'be', 'followed', 'by', 'comma', 'such', 'test', 's', 'find', 'them', 'words', 'with', 'y', 's', 'check', 'for', 'them', 'happy', 'funny', 'story', 'we', 'some', 'random', 'text', 'to', 'make', 'sure', 'works']
+Car numbers: ['1234 AB-5', '5678 CT-3']
+Words that have a minimum length: 10
+All words followed by a comma: ['Yes', 'ball', 'cat', 'dog', 'example', 'comma', 'example', 'test', 'happy', 'funny', 'Finally']
+Longest word that ends with 'y': by 
+Is valid MAC address: True
+Number of words in the text: 162
+Longest word and its position: ('identifying', 109)
+Every odd word: ['Hello', 'are', 'doing', 'I', 'everything', 'fine', 'text', 'for', 'purposes', 'is', 'smiley', 'another', 'This', 'a', 'sentence', 'is', 'one', 'this', 'question', 'it', 'Car', '1234', '5', 'car', '5678', '3', 'text', 'various', 'of', 'and', 'Some', 'start', 'lowercase', 'ball', 'dog', 'This', 'to', 'them', 'MAC', 'aE', 'cA', '76', 'Invalid', 'address', '23', '67', 'Az', 'are', 'testing', 'features', 'finding', 'longest', 'in', 'text', 'identifying', 'words', 'example', 'longest', 'here', 'be', 'Words', 'by', 'comma', 'as', 'test', 'included', 's', 'them', 'about', 'ending', 'y', 's', 'for', 'happy', 'story', 'we', 'some', 'text', 'make', 'everything', 'as']
