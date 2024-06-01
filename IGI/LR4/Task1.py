@@ -137,13 +137,7 @@ def main() -> None:
         TeacherLoad("Wilson", "Physics", 11),
         TeacherLoad("Moore", "Chemistry", 13)
     ]
-    # data = [
-    #     TeacherLoad("Smith", "Math", 10),
-    #     TeacherLoad("Johnson", "Science", 15),
-    #     TeacherLoad("Williams", "History", 5),
-    #     TeacherLoad("Smith", "Physics", 8),
-    #     TeacherLoad("Johnson", "Chemistry", 7)
-    # ]
+  
     school_load = SchoolLoad()
     csv_serializer = CSVSerializer()
     pickle_serializer = PickleSerializer()
