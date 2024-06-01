@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>AutoCar</title>
+</head>
+<body>
+<h1>AutoCar</h1>
+<ul>
+<li><a href="{% url 'home' %}">Главная</a></li>
+<li><a href="{% url 'politics' %}">Политика конфиденциальности</a></li>
+<li><a href="{% url 'parking_spots' %}">Стояночные места</a></li>
+<li><a href="{% url 'sales_statistics' %}">Статистика продаж</a></li>
+{% if user.is_authenticated %}
+<li><h3>Здравствуйте, {{ user.name }}</h3></li>
+<li><h3>Баланс: {{ user.balance }}</h3></li>
+<li><a href="{% url 'user_cars' %}">Мои авто</a></li>
+<li><a href="{% url 'logout' %}">Выйти</a></li>
+<li>
+    <a href="{% url 'replenish_user_balance' %}">Пополнить баланс</a>
+</li>
+<li><a href="{% url 'edit_account' %}">Изменить аккаунт</a></li>
+{% else %}
+<li><a href="{% url 'register' %}">Регистрация</a></li>
+<li><a href="{% url 'login' %}">Вход</a></li>
+{% endif %}
+</ul>
+{% block content %}
+{% endblock content %}
+</body>
+</html>

@@ -1,0 +1,72 @@
+{% extends 'AutoCarApp/base.html' %}
+
+{% block content %}
+<p>User Time: {{ now_user }}</p>
+<p>UTC Time: {{ now_utc }}</p>
+<pre>{{ calendar }}</pre>
+
+<h1>Random Joke</h1>
+{% if joke.type == 'single' %}
+<p>{{ joke.joke }}</p>
+{% else %}
+<p>{{ joke.setup }}</p>
+<p>{{ joke.delivery }}</p>
+{% endif %}
+<h1>Random Cat</h1>
+<img style="width: 200px; height: 200px;" src="{{ cat_image_url }}" alt="Random Cat">
+<h1>Reviews</h1>
+<ul>
+    <li><a href="{% url 'add_review' %}">Leave a Review</a>
+    </li>
+{% for review in reviews %}
+    <li>
+        <strong>Rating:</strong> {{ review.rating }}<br>
+        <strong>Description:</strong> {{ review.description }}<br>
+        <strong>By:</strong> {{ review.user.name }}
+    </li>
+{% endfor %}
+</ul>
+
+<h1>About Company</h1>
+<ul>
+    <li>{{ about_company.info }}</li>
+</ul>
+
+<h1>News Articles</h1>
+<ul>
+{% for article in news_articles %}
+    <li>
+        <strong>Title:</strong> {{ article.name }}<br>
+        <strong>Short description:</strong> {{ article.short_description }}<br>
+        <strong>Description:</strong> {{ article.description }}
+    </li>
+{% endfor %}
+<h1>Last article</h1>
+    <strong>Title:</strong> {{ last_article.name }}<br>
+    <strong>Description:</strong> {{ last_article.description }}
+<h1>Vacancies</h1>
+{% for vacancy in vacancys %}
+    <li>
+        <strong>Name:</strong> {{ vacancy.name }}<br>
+        <strong>Description:</strong> {{ vacancy.description }}<br>
+    </li>
+{% endfor %}
+<h1>Contacts</h1>
+{% for contact in contacts %}
+    <li>
+        <strong>Name:</strong> {{ contact.name }}<br>
+        <strong>Email:</strong> {{ contact.email }}<br>
+        <strong>Phone:</strong> {{ contact.phone }}<br>
+        <strong>Position:</strong> {{ contact.position }}<br>
+    </li>
+{% endfor %}
+<h1>FAQs</h1>
+{% for faq in faqs %}
+    <li>
+        <strong>Question:</strong> {{ faq.question }}<br>
+        <strong>Answer:</strong> {{ faq.answer }}<br>
+        <strong>Creation time:</strong> {{ faq.creation_time }}<br>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'AutoCarApp/base.html' %}
+
+{% block content %}
+<a href="{% url 'parking_spots' %}?sort_by=is_available"> sort by availability </a><br>
+<a href="{% url 'parking_spots' %}?sort_by=price">  sort by price</a>
+{% for spot in spots %}
+  <div>
+    <p>Spot Number: {{ spot.number }} - Price: ${{ spot.price }}</p>
+    {% if spot.is_available %}
+        {% if user.is_authenticated %}
+        <form action="{% url 'park_auto' spot.number %}" method="post">
+            {% csrf_token %}
+            <select name="auto_number">
+                {% for auto in available_autos %}
+                    <option value="{{ auto.number }}">{{ auto.number }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Park Auto</button>
+        </form>
+        {% endif %}
+    {% else %}
+      <p>No available spots</p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+{% endblock content %}
